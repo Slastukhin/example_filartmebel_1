@@ -193,10 +193,10 @@ svg { display: block; width: 1em; height: 1em; fill: none; stroke: currentColor;
 /* ---------- Видео ---------- */
 .video { padding-top: 0; }
 .video__frame { position: relative; aspect-ratio: 16 / 9; border-radius: var(--radius-lg); overflow: hidden; background: var(--navy); box-shadow: var(--shadow); }
-.video__frame img { width: 100%; height: 100%; object-fit: cover; opacity: .85; transition: transform 600ms ease, opacity var(--t); }
+.video__frame img { width: 100%; height: 100%; object-fit: cover; opacity: .78; transition: transform 600ms ease, opacity var(--t); }
 .video__frame:hover img { transform: scale(1.03); }
-.video__play { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px; color: #fff; font: 700 15px/1.2 var(--ff-head); text-shadow: 0 2px 10px rgba(0,0,0,.4); }
-.video__play svg { width: 84px; height: 84px; padding: 24px; border-radius: 50%; background: var(--orange); fill: #fff; stroke: none; box-shadow: 0 10px 30px rgba(255,104,1,.45); transition: transform var(--t), background var(--t); }
+.video__play { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 20px; padding: 24px; color: #fff; font: 700 15px/1.2 var(--ff-head); text-shadow: 0 2px 10px rgba(0,0,0,.4); }
+.video__play svg { width: 76px; height: 76px; padding: 24px; border-radius: 50%; background: var(--orange); fill: #fff; stroke: none; box-shadow: 0 10px 30px rgba(255,104,1,.45); transition: transform var(--t), background var(--t); }
 .video__play:hover svg { transform: scale(1.06); background: var(--orange-dark); }
 .video__frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
 .video__frame.is-playing img, .video__frame.is-playing .video__play { display: none; }
