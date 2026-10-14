@@ -416,6 +416,44 @@ legend { padding: 0; }
 .tier__spec dd { margin: 0; text-align: right; font-weight: 600; color: var(--navy); }
 .tier__bonus { font-size: 13px; color: var(--success); font-weight: 600; }
 .tier .btn { margin-top: auto; }
+
+/* Цены: на мобильных — слайдер карточек, от 768px — две широкие колонки.
+   Пять узких колонок не давали места ни фото, ни составу пакета. */
+@media (min-width: 768px) {
+  .tiers .tier__img { aspect-ratio: 16 / 10; }
+  .tiers .tier__body { gap: 14px; padding: 24px 24px 26px; }
+  .tiers .tier__title { font-size: 22px; }
+  .tiers .tier__price { font-size: 30px; }
+  .tiers .tier__price span { font-size: 15px; }
+  .tiers .tier__text { font-size: 15px; }
+  .tiers .tier__spec { gap: 8px; font-size: 15px; }
+  .tiers .tier__spec div { padding-bottom: 8px; }
+  .tiers .tier__bonus { font-size: 14px; }
+  .tiers .btn { align-self: start; width: auto; padding-inline: 24px; }
+
+  /* «Мебель» — не кухонный пакет, поэтому занимает всю ширину строки
+     и раскладывается горизонтально: фото слева, состав справа */
+  .tiers .tier--wide { grid-column: 1 / -1; flex-direction: row; align-items: stretch; }
+  .tiers .tier--wide .tier__img { width: 42%; max-width: 520px; aspect-ratio: auto; align-self: stretch; }
+  .tiers .tier--wide .tier__body { justify-content: center; padding: 28px 32px; }
+  .tiers .tier--wide .tier__text { max-width: 62ch; }
+}
+
+@media (min-width: 1024px) {
+  .tiers .tier__body { padding: 28px 28px 30px; }
+  .tiers .tier__price { font-size: 34px; }
+  /* Состав пакета в две колонки: подпись слева, значение справа — читается как таблица */
+  .tiers .tier__spec dt { min-width: 112px; }
+}
+
+@media (min-width: 1280px) {
+  .tiers .tier__img { aspect-ratio: 16 / 9; }
+  .tiers .tier--wide .tier__img { width: 44%; }
+  .tiers .tier--wide .tier__body { padding: 36px 40px; gap: 16px; }
+  .tiers .tier--wide .tier__title { font-size: 26px; }
+  .tiers .tier--wide .tier__price { font-size: 38px; }
+  .tiers .tier--wide .tier__text { font-size: 16px; }
+}
 .prices__note { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 24px; margin-top: 24px; }
 .banners { display: grid; gap: 16px; margin-top: 28px; }
 .banner { display: block; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); transition: box-shadow var(--t), transform var(--t); }
@@ -717,13 +755,6 @@ legend { padding: 0; }
   .header__phone { font-size: 16px; }
   .header__cta { padding-inline: 20px; font-size: 15px; min-height: 46px; }
   .slider--mobile .slider__track { grid-template-columns: repeat(var(--cols-xl), minmax(0, 1fr)); }
-  .tiers .tier__body { padding: 16px 16px 18px; }
-  .tiers .tier__price { font-size: 21px; }
-  .tiers .tier__price span { font-size: 12px; }
-  .tiers .tier__spec { font-size: 13px; }
-  .tiers .tier__spec div { flex-direction: column; gap: 0; }
-  .tiers .tier__spec dd { text-align: left; }
-  .tiers .btn { padding-inline: 14px; font-size: 14px; }
 }
 
 @media (min-width: 1440px) {
