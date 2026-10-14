@@ -13,27 +13,45 @@
 </head>
 <body>
 
-<!-- ===== Верхняя полоса: соцсети и адрес (как на сайте) ===== -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2Z"/></symbol>
+  <symbol id="i-tg" viewBox="0 0 24 24"><path d="M21.5 3.6 2.9 10.8c-1 .4-1 1 .2 1.3l4.6 1.4 10.7-6.7c.5-.3 1-.1.6.2l-8.7 7.8-.3 4.8c.5 0 .7-.2 1-.5l2.3-2.3 4.8 3.6c.9.5 1.5.2 1.7-.8L22.9 5c.3-1.3-.5-1.9-1.4-1.4Z"/></symbol>
+  <symbol id="i-vk" viewBox="0 0 24 24"><path d="M13.1 18.5C6.3 18.5 2.4 13.9 2.2 6.1h3.4c.1 5.7 2.6 8.1 4.6 8.6V6.1h3.2v4.9c2-.2 4.1-2.4 4.8-4.9h3.2c-.5 3-2.8 5.3-4.4 6.2 1.6.8 4.2 2.8 5.2 6.2h-3.5c-.8-2.6-2.7-4.5-5.3-4.8v4.8h-.3Z"/></symbol>
+  <symbol id="i-wa" viewBox="0 0 24 24"><path d="M12 2.2a9.8 9.8 0 0 0-8.4 14.8L2.2 22l5.2-1.4A9.8 9.8 0 1 0 12 2.2Zm0 17.9a8.1 8.1 0 0 1-4.1-1.1l-.3-.2-3.1.8.8-3-.2-.3A8.1 8.1 0 1 1 12 20.1Zm4.5-6c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.6 6.6 0 0 1-3.3-2.9c-.2-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8c.1.2 1.9 2.9 4.6 4.1 1.7.7 2.4.8 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.2-.3-.2-.6-.3Z"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 22s7-6.6 7-12A7 7 0 0 0 5 10c0 5.4 7 12 7 12Zm0-9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5Z"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-chev-l" viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-chev-r" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 5 5L20 7" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-ruler" viewBox="0 0 24 24"><path d="M3 15 15 3l6 6L9 21zM8 14l2 2M11 11l2 2M14 8l2 2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-draft" viewBox="0 0 24 24"><path d="M4 4h16v16H4zM4 12h8M12 4v8M12 12l8 8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-factory" viewBox="0 0 24 24"><path d="M3 20h18M5 20V8l5 3V8l5 3V4h4v16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-tool" viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0 5 5L13 18l-3-3 6.7-6.7ZM3 21l4-4M10 15l-7 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-truck" viewBox="0 0 24 24"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="7" cy="18" r="1.5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17" cy="18" r="1.5" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
+  <symbol id="i-store" viewBox="0 0 24 24"><path d="M3 9l2-5h14l2 5M3 9v11h18V9M3 9h18M9 20v-6h6v6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-shelf" viewBox="0 0 24 24"><path d="M4 3v18M20 3v18M4 8h16M4 14h16M8 8V5M14 14v-3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-kitchen" viewBox="0 0 24 24"><path d="M3 10h18v10H3zM3 10V6h18v4M8 10v10M15 10v10M5 14h2M11 14h2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 3 2.7 5.6 6.3.9-4.5 4.3 1 6.2L12 17l-5.5 3 1-6.2L3 9.5l6.3-.9z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+  <symbol id="i-gem" viewBox="0 0 24 24"><path d="M6 3h12l4 6-10 12L2 9zM2 9h20M9 3l3 6 3-6M8 9l4 12 4-12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></symbol>
+</svg>
+
+<!-- ===== Верхняя полоса: три факта с сайта + адрес ===== -->
 <div class="topbar">
   <div class="container topbar__inner">
-    <ul class="socials" aria-label="Мессенджеры и соцсети">
-      <li><a href="https://t.me/+79056714545" target="_blank" rel="noopener" aria-label="Telegram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.5 3.6 2.9 10.8c-1 .4-1 1 .2 1.3l4.6 1.4 10.7-6.7c.5-.3 1-.1.6.2l-8.7 7.8-.3 4.8c.5 0 .7-.2 1-.5l2.3-2.3 4.8 3.6c.9.5 1.5.2 1.7-.8L22.9 5c.3-1.3-.5-1.9-1.4-1.4Z"/></svg></a></li>
-      <li><a href="https://vk.com/filartmebel" target="_blank" rel="noopener" aria-label="ВКонтакте"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.1 18.5C6.3 18.5 2.4 13.9 2.2 6.1h3.4c.1 5.7 2.6 8.1 4.6 8.6V6.1h3.2v4.9c2-.2 4.1-2.4 4.8-4.9h3.2c-.5 3-2.8 5.3-4.4 6.2 1.6.8 4.2 2.8 5.2 6.2h-3.5c-.8-2.6-2.7-4.5-5.3-4.8v4.8h-.3Z"/></svg></a></li>
-      <li><a href="https://wa.me/79056714545" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.2a9.8 9.8 0 0 0-8.4 14.8L2.2 22l5.2-1.4A9.8 9.8 0 1 0 12 2.2Zm0 17.9a8.1 8.1 0 0 1-4.1-1.1l-.3-.2-3.1.8.8-3-.2-.3A8.1 8.1 0 1 1 12 20.1Zm4.5-6c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.6 6.6 0 0 1-3.3-2.9c-.2-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8c.1.2 1.9 2.9 4.6 4.1 1.7.7 2.4.8 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.2-.3-.2-.6-.3Z"/></svg></a></li>
+    <ul class="topbar__usp">
+      <li><svg><use href="#i-ruler"/></svg>Бесплатный замер</li>
+      <li><svg><use href="#i-draft"/></svg>Бесплатный дизайн-проект</li>
+      <li><svg><use href="#i-truck"/></svg>Бесплатная доставка</li>
     </ul>
-    <a class="topbar__address" href="https://yandex.ru/maps/?text=Москва,%20Профсоюзная%2056" target="_blank" rel="noopener">
-      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s7-6.6 7-12A7 7 0 0 0 5 10c0 5.4 7 12 7 12Zm0-9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5Z"/></svg>
-      <span>РФ, г. Москва, ул. Профсоюзная, д. 56, ТЦ «Черёмушки» (3 этаж, линия Б)</span>
-    </a>
+    <a class="topbar__address" href="https://yandex.ru/maps/?text=Москва,%20Профсоюзная%2056" target="_blank" rel="noopener"><svg><use href="#i-pin"/></svg><span>Москва, ул. Профсоюзная, д. 56, ТЦ «Черёмушки», 3 этаж, линия Б</span></a>
   </div>
 </div>
 
 <!-- ===== Шапка ===== -->
 <header class="header" id="top" data-header>
   <div class="container header__inner">
-    <a class="logo" href="#top" aria-label="Филарт Мебель — на главную">
-      <img src="assets/logo.png" width="272" height="90" alt="Филарт Мебель">
-    </a>
+    <a class="logo" href="#top" aria-label="Филарт Мебель — на главную"><img src="assets/logo.png" width="272" height="90" alt="Филарт Мебель"></a>
     <nav class="nav" aria-label="Основное меню">
       <ul class="nav__list">
         <li><a class="nav__link is-active" href="#top">Главная</a></li>
@@ -45,11 +63,8 @@
       </ul>
     </nav>
     <div class="header__actions">
-      <a class="header__phone" href="tel:+79056714545">
-        <span class="header__phone-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2Z"/></svg></span>
-        <span class="header__phone-text"><small>Тел.:</small><b>+7 (905) 671-45-45</b></span>
-      </a>
-      <button class="btn btn--primary header__cta" type="button" data-open-form><span class="cta-short">Заявка</span><span class="cta-full">Оставить заявку</span></button>
+      <a class="header__phone" href="tel:+79056714545" aria-label="Позвонить +7 (905) 671-45-45"><span class="header__phone-icon"><svg><use href="#i-phone"/></svg></span><b>+7 (905) 671-45-45</b></a>
+      <button class="btn btn--primary header__cta" type="button" data-open-form><span class="cta-short">Заявка</span><span class="cta-full">Оставить заявку</span><svg class="btn__arrow"><use href="#i-arrow"/></svg></button>
       <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobile-menu" data-burger><span></span><span></span><span></span></button>
     </div>
   </div>
@@ -75,57 +90,70 @@
 
 <main>
 
-<!-- ===== Первый экран: два слайда, переключение только вручную ===== -->
-<section class="hero" aria-label="Главный экран">
-  <div class="hero__pattern" aria-hidden="true"></div>
-  <div class="container hero__inner" data-hero>
-    <div class="hero__slides">
-      <article class="hero__slide is-active" data-hero-slide>
+<!-- ===== Первый экран: фото на всю ширину, два слайда (авто + вручную) ===== -->
+<section class="hero" aria-label="Главный экран" data-hero data-autoplay="6000">
+  <div class="hero__slides">
+    <article class="hero__slide is-active" data-hero-slide>
+      <div class="hero__bg" data-parallax="0.12"><img src="assets/tier-standart-pljus.jpg" width="1200" height="800" alt="" fetchpriority="high"></div>
+      <div class="container hero__content">
         <div class="hero__text">
           <p class="hero__eyebrow">Ваш дом — Ваше творчество</p>
-          <h1 class="hero__title">Создай <span>кухню</span> <span>мечты</span> с нами</h1>
+          <h1 class="hero__title">Создай <em>кухню</em> мечты с нами</h1>
           <p class="hero__lead">Мы создаём мебель для наших клиентов, чтобы их жизнь стала комфортней.</p>
           <div class="hero__actions">
-            <button class="btn btn--primary btn--lg" type="button" data-open-form>Оставить заявку на замер</button>
-            <a class="btn btn--ghost btn--lg" href="#prices">Смотреть цены</a>
+            <button class="btn btn--primary btn--lg" type="button" data-open-form>Оставить заявку на замер<svg class="btn__arrow"><use href="#i-arrow"/></svg></button>
+            <a class="btn btn--glass btn--lg" href="#prices">Смотреть цены</a>
           </div>
         </div>
-        <div class="hero__media">
-          <div class="hero__blob">
-            <img src="assets/hero-kuhnja.webp" width="760" height="975" alt="Кухня на заказ — пример работы Филарт" fetchpriority="high">
-          </div>
-        </div>
-      </article>
-      <article class="hero__slide" data-hero-slide hidden>
+      </div>
+    </article>
+    <article class="hero__slide" data-hero-slide hidden>
+      <div class="hero__bg" data-parallax="0.12"><img src="assets/mebel-garderobnaja.jpg" width="1600" height="1224" alt="" loading="lazy"></div>
+      <div class="container hero__content">
         <div class="hero__text">
           <p class="hero__eyebrow">Ваш дом — Ваше творчество</p>
-          <h2 class="hero__title">Создай <span>мебель</span> <span>мечты</span> с нами</h2>
+          <h2 class="hero__title">Создай <em>мебель</em> мечты с нами</h2>
           <p class="hero__lead">Мы создаём мебель для наших клиентов, чтобы их жизнь стала комфортней.</p>
           <div class="hero__actions">
-            <button class="btn btn--primary btn--lg" type="button" data-open-form>Оставить заявку на замер</button>
-            <a class="btn btn--ghost btn--lg" href="#prices">Смотреть цены</a>
+            <button class="btn btn--primary btn--lg" type="button" data-open-form>Оставить заявку на замер<svg class="btn__arrow"><use href="#i-arrow"/></svg></button>
+            <a class="btn btn--glass btn--lg" href="#prices">Смотреть цены</a>
           </div>
         </div>
-        <div class="hero__media">
-          <div class="hero__blob">
-            <img src="assets/hero-mebel.webp" width="760" height="975" alt="Гардеробная на заказ — пример работы Филарт" loading="lazy">
-          </div>
-        </div>
-      </article>
-    </div>
+      </div>
+    </article>
+  </div>
+  <p class="hero__watermark" aria-hidden="true">ФИЛАРТ</p>
+  <div class="container hero__bottom">
     <div class="hero__nav" role="tablist" aria-label="Слайды первого экрана">
-      <button class="hero__dot is-active" type="button" role="tab" aria-selected="true" data-hero-dot="0">01</button>
-      <button class="hero__dot" type="button" role="tab" aria-selected="false" data-hero-dot="1">02</button>
+      <button class="hero__dot is-active" type="button" role="tab" aria-selected="true" data-hero-dot="0"><span>01</span><i data-hero-progress></i></button>
+      <button class="hero__dot" type="button" role="tab" aria-selected="false" data-hero-dot="1"><span>02</span><i data-hero-progress></i></button>
     </div>
+    <ul class="hero__facts">
+      <li class="fact"><b>25 лет</b><span>работаем для Вас</span></li>
+      <li class="fact"><b>Бесплатно</b><span>замер и дизайн-проект</span></li>
+      <li class="fact"><b>Шоурум</b><span>Москва, ТЦ «Черёмушки»</span></li>
+    </ul>
   </div>
 </section>
 
-<!-- ===== Бренды материалов и фурнитуры ===== -->
+<!-- ===== Полоса услуг (четыре факта с сайта) ===== -->
+<section class="usp" aria-label="Что мы делаем">
+  <div class="container">
+    <ul class="usp__list">
+      <li class="usp__item"><svg><use href="#i-ruler"/></svg><div><b>Бесплатный замер</b><span>Сделаем точно и быстро</span></div></li>
+      <li class="usp__item"><svg><use href="#i-draft"/></svg><div><b>Бесплатный проект</b><span>Дизайн-проект специально для Вас</span></div></li>
+      <li class="usp__item"><svg><use href="#i-factory"/></svg><div><b>Собственное производство</b><span>Полный цикл изготовления</span></div></li>
+      <li class="usp__item"><svg><use href="#i-truck"/></svg><div><b>Бесплатная доставка</b><span>В удобное для Вас время</span></div></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ===== Бренды ===== -->
 <section class="brands" aria-label="Материалы и фурнитура, с которыми работаем">
   <div class="container">
     <p class="brands__label">Материалы и фурнитура, с которыми работаем</p>
     <div class="scroller" data-scroller>
-      <button class="scroller__arrow scroller__arrow--prev" type="button" aria-label="Прокрутить назад" data-scroller-prev><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg></button>
+      <button class="scroller__arrow scroller__arrow--prev" type="button" aria-label="Прокрутить назад" data-scroller-prev><svg><use href="#i-chev-l"/></svg></button>
       <ul class="brands__track" data-scroller-track>
         <li><img src="assets/brand-egger.png" width="252" height="130" alt="Egger" loading="lazy"></li>
         <li><img src="assets/brand-hettich.png" width="252" height="130" alt="Hettich" loading="lazy"></li>
@@ -143,178 +171,157 @@
         <li><img src="assets/brand-ulgran.jpg" width="252" height="130" alt="Ulgran" loading="lazy"></li>
         <li><img src="assets/brand-florentina.jpg" width="252" height="130" alt="Florentina" loading="lazy"></li>
       </ul>
-      <button class="scroller__arrow scroller__arrow--next" type="button" aria-label="Прокрутить вперёд" data-scroller-next><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></button>
+      <button class="scroller__arrow scroller__arrow--next" type="button" aria-label="Прокрутить вперёд" data-scroller-next><svg><use href="#i-chev-r"/></svg></button>
     </div>
   </div>
 </section>
 
 <!-- ===== Мебель и кухни на заказ по ценам производителя ===== -->
-<section class="about section" id="about">
-  <div class="container about__inner">
-    <div class="about__media">
-      <div class="gallery" data-gallery>
-        <div class="gallery__track" data-gallery-track>
-          <img class="gallery__img is-active" src="assets/pic-10.jpg" width="700" height="650" alt="Современная кухня с островом" loading="lazy">
-          <img class="gallery__img" src="assets/pic-11.jpg" width="1200" height="550" alt="Гостиная с корпусной мебелью" loading="lazy" hidden>
-          <img class="gallery__img" src="assets/pic-8.jpg" width="1200" height="600" alt="Интерьер с мебелью на заказ" loading="lazy" hidden>
-        </div>
-        <button class="gallery__arrow gallery__arrow--prev" type="button" aria-label="Предыдущее фото" data-gallery-prev><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg></button>
-        <button class="gallery__arrow gallery__arrow--next" type="button" aria-label="Следующее фото" data-gallery-next><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></button>
-        <div class="gallery__dots" data-gallery-dots></div>
-      </div>
-      <a class="banner" href="#prices">
-        <img src="assets/banner-kedr.jpg" width="1600" height="494" alt="При заказе кухни столешница Кедр на Ваш выбор в подарок" loading="lazy">
-      </a>
+<section class="about section section--dark" id="about">
+  <div class="container">
+    <div class="about__head reveal">
+      <p class="eyebrow eyebrow--light">О компании</p>
+      <h2 class="section__title section__title--light">Мебель и кухни на заказ по ценам производителя</h2>
+      <p class="section__text section__text--light">Наша компания специализируется на создании кухонной мебели на заказ. Мы разрабатываем индивидуальный проект, учитывая все Ваши пожелания и потребности.</p>
     </div>
-    <div class="about__content">
-      <h2 class="section__title">Мебель и кухни на заказ по ценам производителя</h2>
-      <p class="section__text">Наша компания специализируется на создании кухонной мебели на заказ. Мы разрабатываем индивидуальный проект, учитывая все Ваши пожелания и потребности.</p>
-      <ul class="services">
-        <li class="service"><h3>Бесплатный замер</h3><p>Сделаем точно и быстро.</p></li>
-        <li class="service"><h3>Бесплатный проект</h3><p>Уникальный дизайн-проект специально для Вас.</p></li>
-        <li class="service"><h3>Изготовление</h3><p>Собственное производство полного цикла.</p></li>
-        <li class="service"><h3>Установка</h3><p>Соберём Вашу новую мебель, а также подключим технику.</p></li>
-        <li class="service"><h3>Бесплатная доставка</h3><p>Доставим в удобное для Вас время.</p></li>
-        <li class="service"><h3>Шоурум</h3><p>Приходите на консультацию: выберите цвета и материалы и посмотрите выставочные образцы.</p></li>
-      </ul>
-      <button class="btn btn--primary btn--lg" type="button" data-open-form>Оставить заявку на замер</button>
+
+    <div class="coverflow reveal" data-coverflow data-autoplay="5000" aria-label="Наши работы">
+      <div class="coverflow__stage">
+        <figure class="coverflow__card" data-cf-item><img src="assets/pic-10.jpg" width="700" height="650" alt="Современная кухня с островом" loading="lazy"><figcaption>Кухня с островом</figcaption></figure>
+        <figure class="coverflow__card" data-cf-item><img src="assets/pic-11.jpg" width="1200" height="550" alt="Гостиная с корпусной мебелью" loading="lazy"><figcaption>Корпусная мебель</figcaption></figure>
+        <figure class="coverflow__card" data-cf-item><img src="assets/pic-8.jpg" width="1200" height="600" alt="Интерьер с мебелью на заказ" loading="lazy"><figcaption>Мебель на заказ</figcaption></figure>
+        <figure class="coverflow__card" data-cf-item><img src="assets/banner-kedr.jpg" width="1600" height="494" alt="При заказе кухни столешница Кедр на Ваш выбор в подарок" loading="lazy"><figcaption>Столешница Кедр в подарок</figcaption></figure>
+      </div>
+      <div class="coverflow__nav">
+        <button class="round-btn" type="button" aria-label="Предыдущее фото" data-cf-prev><svg><use href="#i-chev-l"/></svg></button>
+        <div class="dots" data-cf-dots></div>
+        <button class="round-btn" type="button" aria-label="Следующее фото" data-cf-next><svg><use href="#i-chev-r"/></svg></button>
+      </div>
+    </div>
+
+    <ul class="services reveal">
+      <li class="service"><span class="service__icon"><svg><use href="#i-ruler"/></svg></span><div><b>Бесплатный замер</b><p>Сделаем точно и быстро.</p></div></li>
+      <li class="service"><span class="service__icon"><svg><use href="#i-draft"/></svg></span><div><b>Бесплатный проект</b><p>Уникальный дизайн-проект специально для Вас.</p></div></li>
+      <li class="service"><span class="service__icon"><svg><use href="#i-factory"/></svg></span><div><b>Изготовление</b><p>Собственное производство полного цикла.</p></div></li>
+      <li class="service"><span class="service__icon"><svg><use href="#i-tool"/></svg></span><div><b>Установка</b><p>Соберём Вашу новую мебель, а также подключим технику.</p></div></li>
+      <li class="service"><span class="service__icon"><svg><use href="#i-truck"/></svg></span><div><b>Бесплатная доставка</b><p>Доставим в удобное для Вас время.</p></div></li>
+      <li class="service"><span class="service__icon"><svg><use href="#i-store"/></svg></span><div><b>Шоурум</b><p>Приходите на консультацию: выберите цвета и материалы, посмотрите выставочные образцы.</p></div></li>
+    </ul>
+    <div class="section__cta reveal">
+      <button class="btn btn--primary btn--lg" type="button" data-open-form>Оставить заявку на замер<svg class="btn__arrow"><use href="#i-arrow"/></svg></button>
     </div>
   </div>
 </section>
 
-<!-- ===== Процесс изготовления ===== -->
-<section class="process section section--pattern" id="process">
-  <div class="container process__inner">
-    <div class="process__intro">
+<!-- ===== Процесс изготовления: большие цифры с фотографиями ===== -->
+<section class="process section" id="process">
+  <div class="container">
+    <div class="section__head section__head--center reveal">
       <p class="eyebrow">Процесс изготовления</p>
       <h2 class="section__title">Индивидуальная мебель и кухни на заказ</h2>
       <p class="section__text">Изготовление мебели и кухни — это сложный многоступенчатый процесс. Но для наших клиентов — это всего четыре простых шага в сопровождении персонального дизайнера.</p>
     </div>
     <ol class="steps">
-      <li class="step">
-        <span class="step__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 4h16v16H4z"/><path d="M4 12h8M12 4v8M12 12l8 8"/></svg></span>
-        <h3>Бесплатный проект</h3>
-        <p>Создадим индивидуальный проект для Вашей кухни.</p>
+      <li class="step reveal">
+        <span class="step__num" style="--photo:url('../assets/mebel-karandash.jpg')" aria-hidden="true">01</span>
+        <div class="step__body"><h3>Бесплатный проект</h3><p>Создадим индивидуальный проект для Вашей кухни.</p></div>
       </li>
-      <li class="step">
-        <span class="step__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 17h18M6 17V9l6-4 6 4v8"/><path d="M9 17v-4h6v4"/></svg></span>
-        <h3>Бесплатный замер</h3>
-        <p>Наши замерщики готовы приехать в любое удобное для Вас время.</p>
+      <li class="step reveal">
+        <span class="step__num" style="--photo:url('../assets/pic-10.jpg')" aria-hidden="true">02</span>
+        <div class="step__body"><h3>Бесплатный замер</h3><p>Наши замерщики готовы приехать в любое удобное для Вас время.</p></div>
       </li>
-      <li class="step">
-        <span class="step__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 20h18M5 20V8l5 3V8l5 3V4h4v16"/></svg></span>
-        <h3>Производство мебели</h3>
-        <p>Как только мы заключаем договор, проект сразу отправляется на фабрику.</p>
+      <li class="step reveal">
+        <span class="step__num" style="--photo:url('../assets/production-video-preview.jpeg')" aria-hidden="true">03</span>
+        <div class="step__body"><h3>Производство мебели</h3><p>Как только мы заключаем договор, проект сразу отправляется на фабрику.</p></div>
       </li>
-      <li class="step">
-        <span class="step__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7z"/><circle cx="7" cy="18" r="1.5"/><circle cx="17" cy="18" r="1.5"/></svg></span>
-        <h3>Доставка и сборка</h3>
-        <p>Оставьте все заботы нам — Вы можете не беспокоиться о доставке кухни.</p>
+      <li class="step reveal">
+        <span class="step__num" style="--photo:url('../assets/tier-dostupnaja.jpg')" aria-hidden="true">04</span>
+        <div class="step__body"><h3>Доставка и сборка</h3><p>Оставьте все заботы нам — Вы можете не беспокоиться о доставке кухни.</p></div>
       </li>
     </ol>
   </div>
 </section>
 
-<!-- ===== Видео о производстве ===== -->
-<section class="video section" aria-label="Видео о производстве">
-  <div class="container">
-    <div class="video__frame" data-video="https://vk.com/video_ext.php?oid=-153035900&id=456239150&hd=2&autoplay=1">
-      <img src="assets/production-video-preview.jpeg" width="1600" height="1067" alt="Цех фабрики Филарт в Белгороде" loading="lazy">
-      <button class="video__play" type="button" aria-label="Смотреть видео о производстве" data-video-play>
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
-        <span>Смотреть видео о производстве</span>
-      </button>
+<!-- ===== Видео о производстве — во всю ширину экрана ===== -->
+<section class="video" aria-label="Видео о производстве">
+  <div class="video__frame" data-video="https://vk.com/video_ext.php?oid=-153035900&id=456239150&hd=2&autoplay=1">
+    <div class="video__bg" data-parallax="0.1"><img src="assets/production-video-preview.jpeg" width="1600" height="1067" alt="Цех фабрики Филарт в Белгороде" loading="lazy"></div>
+    <div class="container video__content">
+      <p class="eyebrow eyebrow--light">Производство</p>
+      <h2 class="section__title section__title--light">Собственное производство полного цикла</h2>
+      <button class="video__play" type="button" aria-label="Смотреть видео о производстве" data-video-play><span class="video__play-icon"><svg><use href="#i-play"/></svg></span><span>Смотреть видео о производстве</span></button>
     </div>
   </div>
 </section>
 
-<!-- ===== Рассрочка ===== -->
-<section class="promo" aria-label="Рассрочка">
-  <div class="container">
-    <button class="banner banner--button" type="button" data-open-form data-topic="Рассрочка 0-0-12">
-      <img src="assets/banner-rassrochka.jpg" width="1600" height="494" alt="Отдаём мебель без денег. Рассрочка 0-0-12. Не является публичной офертой" loading="lazy">
-    </button>
+<!-- ===== Акции с сайта ===== -->
+<section class="promo section" aria-label="Акции">
+  <div class="container promo__grid">
+    <button class="banner reveal" type="button" data-open-form data-topic="Рассрочка 0-0-12"><img src="assets/banner-rassrochka.jpg" width="1600" height="494" alt="Отдаём мебель без денег. Рассрочка 0-0-12. Не является публичной офертой" loading="lazy"></button>
+    <a class="banner reveal" href="#prices"><img src="assets/banner-kedr.jpg" width="1600" height="494" alt="При заказе кухни столешница Кедр на Ваш выбор в подарок" loading="lazy"></a>
   </div>
 </section>
 
 <!-- ===== Стоимость изготовления ===== -->
 <section class="prices section" id="prices">
   <div class="container">
-    <div class="section__head section__head--center">
+    <div class="section__head section__head--center reveal">
       <p class="eyebrow">Стоимость изготовления</p>
       <h2 class="section__title">Создай мебель твоей мечты</h2>
+      <p class="section__text">Пять пакетов — от корпусной мебели до премиум-кухни. В каждом: бесплатный дизайн-проект и бесплатный замер.</p>
     </div>
-    <div class="slider" data-slider>
+    <div class="slider reveal" data-slider data-autoplay="6000">
       <div class="tiers" data-slider-track>
         <article class="tier">
-          <div class="tier__media"><img src="assets/tier-mebel.jpg" width="1011" height="607" alt="Корпусная мебель" loading="lazy"><span class="tier__name">Мебель</span></div>
-          <ul class="tier__list">
-            <li>стеллажи | шкафы | шкаф-купе</li>
-            <li>офисная мебель | тумбы под ТВ</li>
-            <li>гардеробные | прихожие</li>
-            <li>детские | гостиные | спальни</li>
-          </ul>
-          <p class="tier__bonus">Бесплатный дизайн-проект. Бесплатный замер.</p>
-          <p class="tier__price">от ₽15 000<small>/пог.м.</small></p>
-          <button class="btn btn--outline" type="button" data-open-form data-topic="Мебель — от 15 000 ₽/пог.м.">Заказать проект</button>
+          <span class="tier__icon"><svg><use href="#i-shelf"/></svg></span>
+          <h3 class="tier__name">Мебель</h3>
+          <p class="tier__desc">Стеллажи, шкафы, шкаф-купе, офисная мебель, тумбы под ТВ, гардеробные, прихожие, детские, гостиные, спальни.</p>
+          <p class="tier__price"><small>от</small>15 000 ₽<small>/пог.м.</small></p>
+          <ul class="tier__list"><li>Бесплатный дизайн-проект</li><li>Бесплатный замер</li><li>Любые размеры под Ваше помещение</li></ul>
+          <button class="btn btn--outline btn--block" type="button" data-open-form data-topic="Мебель — от 15 000 ₽/пог.м.">Заказать проект</button>
         </article>
         <article class="tier">
-          <div class="tier__media"><img src="assets/tier-dostupnaja.jpg" width="1200" height="800" alt="Доступная кухня" loading="lazy"><span class="tier__name">Доступная кухня</span></div>
-          <ul class="tier__list">
-            <li>фасад — ЛДСП | Egger</li>
-            <li>фурнитура — Boyard</li>
-            <li>столешница — Кедр</li>
-            <li>фальшпанель — Кедр</li>
-          </ul>
-          <p class="tier__bonus">Бесплатный дизайн-проект. Бесплатный замер.</p>
-          <p class="tier__price">от ₽35 000<small>/пог.м.</small></p>
-          <button class="btn btn--outline" type="button" data-open-form data-topic="Доступная кухня — от 35 000 ₽/пог.м.">Заказать проект</button>
+          <span class="tier__icon"><svg><use href="#i-kitchen"/></svg></span>
+          <h3 class="tier__name">Доступная кухня</h3>
+          <p class="tier__desc">Базовый пакет для тех, кто хочет надёжную кухню по понятной цене.</p>
+          <p class="tier__price"><small>от</small>35 000 ₽<small>/пог.м.</small></p>
+          <ul class="tier__list"><li>Фасад — ЛДСП Egger</li><li>Фурнитура — Boyard</li><li>Столешница — Кедр</li><li>Фальшпанель — Кедр</li></ul>
+          <button class="btn btn--outline btn--block" type="button" data-open-form data-topic="Доступная кухня — от 35 000 ₽/пог.м.">Заказать проект</button>
+        </article>
+        <article class="tier tier--accent">
+          <span class="tier__badge">Бесплатный проект и замер</span>
+          <span class="tier__icon"><svg><use href="#i-star"/></svg></span>
+          <h3 class="tier__name">Кухня стандарт</h3>
+          <p class="tier__desc">Фасады МДФ в плёнке ПВХ и столешницы Кедр или Slotex.</p>
+          <p class="tier__price"><small>от</small>45 000 ₽<small>/пог.м.</small></p>
+          <ul class="tier__list"><li>Фасад — МДФ в ПВХ</li><li>Фурнитура — Samet, DTC</li><li>Столешница — Кедр, Slotex</li><li>Фальшпанель — Кедр, Slotex</li></ul>
+          <button class="btn btn--primary btn--block" type="button" data-open-form data-topic="Кухня стандарт — от 45 000 ₽/пог.м.">Заказать проект</button>
         </article>
         <article class="tier">
-          <div class="tier__media"><img src="assets/tier-standart.jpeg" width="1024" height="704" alt="Кухня стандарт" loading="lazy"><span class="tier__name">Кухня стандарт</span></div>
-          <ul class="tier__list">
-            <li>фасад — МДФ в ПВХ</li>
-            <li>фурнитура — Samet | DTC</li>
-            <li>столешница — Кедр | Slotex</li>
-            <li>фальшпанель — Кедр | Slotex</li>
-          </ul>
-          <p class="tier__bonus">Бесплатный дизайн-проект. Бесплатный замер.</p>
-          <p class="tier__price">от ₽45 000<small>/пог.м.</small></p>
-          <button class="btn btn--outline" type="button" data-open-form data-topic="Кухня стандарт — от 45 000 ₽/пог.м.">Заказать проект</button>
+          <span class="tier__icon"><svg><use href="#i-kitchen"/></svg></span>
+          <h3 class="tier__name">Кухня стандарт плюс</h3>
+          <p class="tier__desc">Фасады AGT, фурнитура Hettich и Blum, столешница из камня.</p>
+          <p class="tier__price"><small>от</small>55 000 ₽<small>/пог.м.</small></p>
+          <ul class="tier__list"><li>Фасад — AGT панель</li><li>Фурнитура — Hettich, Blum</li><li>Столешница — камень Магна, Slotex</li><li>Фальшпанель — Slotex, закалённое стекло</li></ul>
+          <button class="btn btn--outline btn--block" type="button" data-open-form data-topic="Кухня стандарт плюс — от 55 000 ₽/пог.м.">Заказать проект</button>
         </article>
         <article class="tier">
-          <div class="tier__media"><img src="assets/tier-standart-pljus.jpg" width="1200" height="800" alt="Кухня стандарт плюс" loading="lazy"><span class="tier__name">Кухня стандарт плюс</span></div>
-          <ul class="tier__list">
-            <li>фасад — AGT панель</li>
-            <li>фурнитура — Hettich | Blum</li>
-            <li>столешница — камень Магна | Slotex</li>
-            <li>фальшпанель — Slotex | закалённое стекло</li>
-          </ul>
-          <p class="tier__bonus">Бесплатный дизайн-проект. Бесплатный замер.</p>
-          <p class="tier__price">от ₽55 000<small>/пог.м.</small></p>
-          <button class="btn btn--outline" type="button" data-open-form data-topic="Кухня стандарт плюс — от 55 000 ₽/пог.м.">Заказать проект</button>
-        </article>
-        <article class="tier">
-          <div class="tier__media"><img src="assets/tier-premium.jpg" width="1280" height="720" alt="Премиум кухня" loading="lazy"><span class="tier__name">Премиум кухня</span></div>
-          <ul class="tier__list">
-            <li>фасад — МДФ | эмаль | шпон</li>
-            <li>фурнитура — Hettich | Blum</li>
-            <li>столешница — камень Магна | Slotex</li>
-            <li>фальшпанель — Slotex | закалённое стекло</li>
-          </ul>
-          <p class="tier__bonus">Бесплатный дизайн-проект. Бесплатный замер.</p>
-          <p class="tier__price">от ₽70 000<small>/пог.м.</small></p>
-          <button class="btn btn--outline" type="button" data-open-form data-topic="Премиум кухня — от 70 000 ₽/пог.м.">Заказать проект</button>
+          <span class="tier__icon"><svg><use href="#i-gem"/></svg></span>
+          <h3 class="tier__name">Премиум кухня</h3>
+          <p class="tier__desc">Фасады МДФ с эмалью или шпоном, премиальная фурнитура и камень.</p>
+          <p class="tier__price"><small>от</small>70 000 ₽<small>/пог.м.</small></p>
+          <ul class="tier__list"><li>Фасад — МДФ, эмаль, шпон</li><li>Фурнитура — Hettich, Blum</li><li>Столешница — камень Магна, Slotex</li><li>Фальшпанель — Slotex, закалённое стекло</li></ul>
+          <button class="btn btn--outline btn--block" type="button" data-open-form data-topic="Премиум кухня — от 70 000 ₽/пог.м.">Заказать проект</button>
         </article>
       </div>
       <div class="slider__nav" data-slider-nav>
-        <button class="slider__arrow" type="button" aria-label="Назад" data-slider-prev><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg></button>
-        <div class="slider__dots" data-slider-dots></div>
-        <button class="slider__arrow" type="button" aria-label="Вперёд" data-slider-next><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></button>
+        <button class="round-btn" type="button" aria-label="Назад" data-slider-prev><svg><use href="#i-chev-l"/></svg></button>
+        <div class="dots" data-slider-dots></div>
+        <button class="round-btn" type="button" aria-label="Вперёд" data-slider-next><svg><use href="#i-chev-r"/></svg></button>
       </div>
     </div>
-    <div class="prices__footer">
-      <a class="btn btn--primary btn--lg" href="https://filartmebel.ru/wp-content/uploads/2024/01/Прайс-на-услуги-ФилАрт.pdf" target="_blank" rel="noopener">Прейскурант цен на сборку мебели</a>
+    <div class="section__cta reveal">
+      <a class="btn btn--dark btn--lg" href="https://filartmebel.ru/wp-content/uploads/2024/01/Прайс-на-услуги-ФилАрт.pdf" target="_blank" rel="noopener">Прейскурант цен на сборку мебели</a>
     </div>
   </div>
 </section>
@@ -322,61 +329,76 @@
 </main>
 
 <!-- ===== Подвал ===== -->
-<footer class="footer section--pattern" id="contacts">
+<footer class="footer" id="contacts">
   <div class="container">
-    <div class="footer__top">
-      <img class="footer__logo" src="assets/logo.png" width="272" height="90" alt="Филарт Мебель" loading="lazy">
-      <ul class="socials socials--round" aria-label="Мессенджеры и соцсети">
-        <li><a href="https://t.me/+79056714545" target="_blank" rel="noopener" aria-label="Telegram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.5 3.6 2.9 10.8c-1 .4-1 1 .2 1.3l4.6 1.4 10.7-6.7c.5-.3 1-.1.6.2l-8.7 7.8-.3 4.8c.5 0 .7-.2 1-.5l2.3-2.3 4.8 3.6c.9.5 1.5.2 1.7-.8L22.9 5c.3-1.3-.5-1.9-1.4-1.4Z"/></svg></a></li>
-        <li><a href="https://vk.com/filartmebel" target="_blank" rel="noopener" aria-label="ВКонтакте"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.1 18.5C6.3 18.5 2.4 13.9 2.2 6.1h3.4c.1 5.7 2.6 8.1 4.6 8.6V6.1h3.2v4.9c2-.2 4.1-2.4 4.8-4.9h3.2c-.5 3-2.8 5.3-4.4 6.2 1.6.8 4.2 2.8 5.2 6.2h-3.5c-.8-2.6-2.7-4.5-5.3-4.8v4.8h-.3Z"/></svg></a></li>
-        <li><a href="https://wa.me/79056714545" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.2a9.8 9.8 0 0 0-8.4 14.8L2.2 22l5.2-1.4A9.8 9.8 0 1 0 12 2.2Zm0 17.9a8.1 8.1 0 0 1-4.1-1.1l-.3-.2-3.1.8.8-3-.2-.3A8.1 8.1 0 1 1 12 20.1Zm4.5-6c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.6 6.6 0 0 1-3.3-2.9c-.2-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8c.1.2 1.9 2.9 4.6 4.1 1.7.7 2.4.8 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.2-.3-.2-.6-.3Z"/></svg></a></li>
-      </ul>
-    </div>
     <div class="footer__grid">
-      <div class="footer__col">
-        <h3 class="footer__title">Компания «Филарт»</h3>
-        <p>Хотите эргономичную мебель высокого качества, которая подойдёт именно Вам? Мы здесь, чтобы помочь! Наши кухни и корпусная мебель на заказ — это современные материалы, надёжная фурнитура и широкий выбор цветов по доступным ценам. Мы заботимся о комфорте наших клиентов и создаём уютную атмосферу в их домах.</p>
-        <button class="btn btn--primary" type="button" data-open-form>Оставить заявку на замер</button>
+      <div class="footer__brand">
+        <img class="footer__logo" src="assets/logo.png" width="272" height="90" alt="Филарт Мебель" loading="lazy">
+        <p>Кухни и корпусная мебель на заказ. Современные материалы, надёжная фурнитура и широкий выбор цветов по доступным ценам.</p>
+        <ul class="socials" aria-label="Мессенджеры и соцсети">
+          <li><a href="https://t.me/+79056714545" target="_blank" rel="noopener" aria-label="Telegram"><svg><use href="#i-tg"/></svg></a></li>
+          <li><a href="https://vk.com/filartmebel" target="_blank" rel="noopener" aria-label="ВКонтакте"><svg><use href="#i-vk"/></svg></a></li>
+          <li><a href="https://wa.me/79056714545" target="_blank" rel="noopener" aria-label="WhatsApp"><svg><use href="#i-wa"/></svg></a></li>
+        </ul>
       </div>
       <div class="footer__col">
-        <h3 class="footer__title">Адреса и контакты</h3>
-        <ul class="contacts">
-          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2Z"/></svg><div><b>Телефон:</b><a href="tel:+79056714545">+7 (905) 671-45-45</a></div></li>
-          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18v14H3z"/><path d="m3 6 9 7 9-7"/></svg><div><b>Электронная почта:</b><a href="mailto:filartmebel@yandex.ru">filartmebel@yandex.ru</a></div></li>
-          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s7-6.6 7-12A7 7 0 0 0 5 10c0 5.4 7 12 7 12Z"/><circle cx="12" cy="10" r="2.5"/></svg><div><b>Шоурум:</b><span>РФ, г. Москва, ул. Профсоюзная, д. 56, ТЦ «Черёмушки» (3 этаж, линия Б)</span><a class="link" href="https://yandex.ru/maps/?text=Москва,%20Профсоюзная%2056" target="_blank" rel="noopener">Построить маршрут</a></div></li>
-          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s7-6.6 7-12A7 7 0 0 0 5 10c0 5.4 7 12 7 12Z"/><circle cx="12" cy="10" r="2.5"/></svg><div><b>Производство:</b><span>РФ, г. Белгород, Михайловское шоссе, д. 5В</span></div></li>
+        <h3 class="footer__title">Разделы</h3>
+        <ul class="footer__links">
+          <li><a href="#top">Главная</a></li>
+          <li><a href="https://filartmebel.ru/o-kompanii/">О компании</a></li>
+          <li><a href="https://filartmebel.ru/proizvodstvo/">Производство</a></li>
+          <li><a href="#prices">Стоимость</a></li>
+          <li><a href="https://filartmebel.ru/portfolio/">Портфолио</a></li>
+          <li><a href="https://filartmebel.ru/contact-us/">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h3 class="footer__title">Контакты</h3>
+        <ul class="footer__links footer__links--contacts">
+          <li><a href="tel:+79056714545">+7 (905) 671-45-45</a></li>
+          <li><a href="mailto:filartmebel@yandex.ru">filartmebel@yandex.ru</a></li>
+          <li><span>Шоурум: Москва, ул. Профсоюзная, д. 56, ТЦ «Черёмушки», 3 этаж, линия Б</span><a class="link" href="https://yandex.ru/maps/?text=Москва,%20Профсоюзная%2056" target="_blank" rel="noopener">Построить маршрут</a></li>
+          <li><span>Производство: г. Белгород, Михайловское шоссе, д. 5В</span></li>
         </ul>
       </div>
       <div class="footer__col">
         <h3 class="footer__title">Реквизиты</h3>
-        <ul class="requisites">
-          <li>ИНН: 9728084179</li>
-          <li>КПП: 772801001</li>
-          <li>ОГРН: 1227700909875</li>
+        <ul class="footer__links">
+          <li>ООО «ФИЛАРТ»</li>
+          <li>ИНН 9728084179</li>
+          <li>КПП 772801001</li>
+          <li>ОГРН 1227700909875</li>
           <li>Директор по производству: <a href="tel:+79051709991">+7 905 170-99-91</a></li>
           <li>Коммерческий директор: <a href="tel:+79102214949">+7 910 221-49-49</a></li>
         </ul>
-        <a class="link" href="https://filartmebel.ru/wp-content/uploads/2023/03/filart-mebel-kartochka-predprijatija.pdf" target="_blank" rel="noopener">Карточка предприятия ООО «ФИЛАРТ»</a>
+      </div>
+      <ul class="footer__usp">
+        <li><svg><use href="#i-ruler"/></svg><div><b>Бесплатный замер</b><span>В удобное для Вас время</span></div></li>
+        <li><svg><use href="#i-draft"/></svg><div><b>Бесплатный проект</b><span>Персональный дизайнер</span></div></li>
+        <li><svg><use href="#i-truck"/></svg><div><b>Бесплатная доставка</b><span>Сборка и подключение техники</span></div></li>
+      </ul>
+    </div>
+    <div class="footer__bottom">
+      <p>© ООО «ФИЛАРТ». Кухни и корпусная мебель на заказ.</p>
+      <div class="footer__docs">
+        <a class="link" href="https://filartmebel.ru/wp-content/uploads/2023/03/filart-mebel-kartochka-predprijatija.pdf" target="_blank" rel="noopener">Карточка предприятия</a>
         <a class="link" href="https://filartmebel.ru/#lepopup-soglashenie" target="_blank" rel="noopener">Пользовательское соглашение</a>
       </div>
     </div>
-    <p class="footer__bottom">© ООО «ФИЛАРТ». Кухни и корпусная мебель на заказ.</p>
   </div>
 </footer>
 
-<!-- ===== Фиксированная панель на мобильных ===== -->
 <div class="bottom-bar" data-bottom-bar hidden>
-  <a class="btn btn--ghost" href="tel:+79056714545"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2Z"/></svg><span>Позвонить</span></a>
+  <a class="btn btn--ghost" href="tel:+79056714545"><svg><use href="#i-phone"/></svg><span>Позвонить</span></a>
   <button class="btn btn--primary" type="button" data-open-form>Оставить заявку</button>
 </div>
+<button class="to-top" type="button" aria-label="Наверх" data-to-top hidden><svg viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
 
-<button class="to-top" type="button" aria-label="Наверх" data-to-top hidden><svg viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
-
-<!-- ===== Попап заявки (как на сайте, но с подписями над полями и понятным ответом) ===== -->
+<!-- ===== Попап заявки ===== -->
 <div class="modal" data-modal hidden>
   <div class="modal__backdrop" data-modal-close></div>
   <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="modal-title">
-    <button class="modal__close" type="button" aria-label="Закрыть" data-modal-close><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    <button class="modal__close" type="button" aria-label="Закрыть" data-modal-close><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
     <form class="form" novalidate data-form>
       <p class="eyebrow">Бесплатный замер и дизайн-проект</p>
       <h2 class="form__title" id="modal-title">Оставить заявку на замер</h2>
@@ -391,16 +413,13 @@
         <input class="field__input" id="f-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="+7 (___) ___-__-__" required aria-describedby="f-phone-err">
         <p class="field__error" id="f-phone-err" hidden>Укажите телефон — по нему мы перезвоним</p>
       </div>
-      <label class="check">
-        <input type="checkbox" name="consent" required aria-describedby="f-consent-err">
-        <span>Соглашаюсь с <a href="https://filartmebel.ru/#lepopup-soglashenie" target="_blank" rel="noopener">пользовательским соглашением</a></span>
-      </label>
+      <label class="check"><input type="checkbox" name="consent" required aria-describedby="f-consent-err"><span>Соглашаюсь с <a href="https://filartmebel.ru/#lepopup-soglashenie" target="_blank" rel="noopener">пользовательским соглашением</a></span></label>
       <p class="field__error" id="f-consent-err" hidden>Нужно согласие с пользовательским соглашением</p>
       <button class="btn btn--primary btn--lg btn--block" type="submit" data-form-submit>Оставить заявку на замер</button>
       <p class="form__note">Замер и дизайн-проект — бесплатно.</p>
     </form>
     <div class="success" data-form-success hidden tabindex="-1">
-      <span class="success__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m5 12 5 5L20 7"/></svg></span>
+      <span class="success__icon"><svg><use href="#i-check"/></svg></span>
       <h2 class="form__title">Заявка принята</h2>
       <p class="form__text">Что дальше:</p>
       <ol class="success__steps">
