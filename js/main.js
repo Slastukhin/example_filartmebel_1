@@ -36,13 +36,25 @@
 
   /* ---------- Бургер ---------- */
   function initBurger() {
-    var btn = $('[data-burger]'), menu = $('[data-mobile-menu]'); if (!btn || !menu) return;
+    var btn = $('[data-burger]'), menu = $('[data-mobile-menu]'), back = $('[data-menu-backdrop]'); if (!btn || !menu) return;
+    var closing = null;
+    /* меню выезжает слева: сначала снимаем hidden, на следующем кадре включаем класс — так срабатывает transition */
     function set(open) {
-      menu.hidden = !open; btn.setAttribute('aria-expanded', String(open));
+      clearTimeout(closing);
+      btn.setAttribute('aria-expanded', String(open));
       btn.setAttribute('aria-label', open ? 'Закрыть меню' : 'Открыть меню');
       document.body.classList.toggle('menu-open', open);
+      if (open) {
+        menu.hidden = false; if (back) back.hidden = false;
+        void menu.offsetWidth;   /* фиксируем стартовое положение, чтобы сработал transition */
+        setTimeout(function () { menu.classList.add('is-open'); back && back.classList.add('is-open'); }, 20);
+      } else {
+        menu.classList.remove('is-open'); back && back.classList.remove('is-open');
+        closing = setTimeout(function () { menu.hidden = true; if (back) back.hidden = true; }, REDUCED ? 0 : 360);
+      }
     }
-    btn.addEventListener('click', function () { set(menu.hidden); });
+    back && back.addEventListener('click', function () { set(false); });
+    btn.addEventListener('click', function () { set(btn.getAttribute('aria-expanded') !== 'true'); });
     $$('a', menu).forEach(function (a) { a.addEventListener('click', function () { set(false); }); });
     document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !menu.hidden) set(false); });
     window.matchMedia('(min-width: 1280px)').addEventListener('change', function (e) { if (e.matches) set(false); });
