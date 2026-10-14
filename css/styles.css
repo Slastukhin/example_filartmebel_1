@@ -91,8 +91,8 @@ svg { display: block; width: 1em; height: 1em; fill: currentColor; flex: none; }
 .topbar__address:hover { color: #fff; }
 
 /* ---------- Шапка ---------- */
-.header { position: sticky; top: 0; z-index: 50; background: rgba(251, 246, 239, .92); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); box-shadow: 0 1px 0 var(--line); transition: box-shadow var(--t), background var(--t); }
-.header.is-scrolled { background: rgba(251, 246, 239, .98); box-shadow: 0 8px 28px rgba(60, 40, 20, .08); }
+.header { position: sticky; top: 0; z-index: 50; background: var(--cream); box-shadow: 0 1px 0 var(--line); transition: box-shadow var(--t), background var(--t); }
+.header.is-scrolled { background: var(--cream); box-shadow: 0 8px 28px rgba(60, 40, 20, .08); }
 .header__inner { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: var(--header-h); }
 .logo { flex: 0 0 auto; display: block; }
 .logo img { width: auto; height: 34px; }
@@ -109,12 +109,12 @@ svg { display: block; width: 1em; height: 1em; fill: currentColor; flex: none; }
 .header__cta { min-height: 40px; padding: 6px 14px; font-size: 13px; box-shadow: none; white-space: nowrap; }
 .header__cta .btn__arrow { display: none; }
 .cta-full { display: none; } .cta-short { display: inline; }
-.burger { display: inline-flex; flex-direction: column; justify-content: center; gap: 5px; width: 44px; height: 44px; padding: 10px; border-radius: 12px; }
-.burger span { display: block; height: 2px; border-radius: 2px; background: var(--ink); transition: transform var(--t), opacity var(--t); }
-.burger[aria-expanded="true"] span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.burger { position: relative; z-index: 51; display: inline-flex; flex-direction: column; justify-content: center; gap: 6px; width: 44px; height: 44px; padding: 10px; border-radius: 12px; background: var(--sand); }
+.burger span { display: block; height: 2.5px; border-radius: 2px; background: var(--ink); transition: transform var(--t), opacity var(--t); }
+.burger[aria-expanded="true"] span:nth-child(1) { transform: translateY(8.5px) rotate(45deg); }
 .burger[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
-.burger[aria-expanded="true"] span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
-.mobile-menu { position: fixed; inset: var(--header-h) 0 0; z-index: 49; overflow-y: auto; background: var(--cream); padding: 12px var(--gutter) 32px; }
+.burger[aria-expanded="true"] span:nth-child(3) { transform: translateY(-8.5px) rotate(-45deg); }
+.mobile-menu { position: fixed; top: var(--header-h); left: 0; right: 0; bottom: 0; z-index: 49; height: calc(100dvh - var(--header-h)); overflow-y: auto; background: var(--cream); padding: 12px var(--gutter) 32px; }
 .mobile-menu__link { display: flex; align-items: center; min-height: 54px; border-bottom: 1px solid var(--line); font: 700 18px/1 var(--ff-head); color: var(--ink); }
 .mobile-menu__contacts { display: grid; gap: 14px; padding-top: 22px; }
 .mobile-menu__phone { font: 800 24px/1.2 var(--ff-head); color: var(--ink); }
@@ -287,7 +287,8 @@ svg { display: block; width: 1em; height: 1em; fill: currentColor; flex: none; }
 
 /* ---------- Нижняя панель, «наверх» ---------- */
 .bottom-bar { position: fixed; left: 0; right: 0; bottom: 0; z-index: 48; display: grid; grid-template-columns: auto 1fr; gap: 10px; padding: 10px var(--gutter) calc(10px + env(safe-area-inset-bottom)); background: var(--white); box-shadow: 0 -8px 28px rgba(60,40,20,.14); }
-.bottom-bar .btn { min-height: 50px; }
+.bottom-bar .btn { min-height: 48px; padding-inline: 16px; font-size: 13px; white-space: nowrap; }
+.bottom-bar .btn svg { width: 17px; height: 17px; }
 .to-top { position: fixed; right: 16px; bottom: 92px; z-index: 47; width: 48px; height: 48px; border-radius: 50%; background: var(--dark); color: #fff; box-shadow: var(--shadow-lg); display: inline-flex; align-items: center; justify-content: center; transition: background var(--t), transform var(--t); }
 .to-top:hover { background: var(--orange); color: var(--ink); transform: translateY(-2px); }
 .to-top svg { width: 22px; height: 22px; }
